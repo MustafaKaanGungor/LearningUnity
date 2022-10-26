@@ -30,6 +30,6 @@ public class Player : MonoBehaviour
 
     void PlayerMov()
     {
-       playerRB.MovePosition (transform.position + playerPosChange * playerSpeed * Time.fixedDeltaTime);
+    playerRB.MovePosition (transform.position + playerPosChange * playerSpeed * Time.fixedDeltaTime);
     }
 }
