@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SmoothCam : MonoBehaviour
 {
-    public GameObject target;
+    public Transform target;
     void Start()
     {
         
