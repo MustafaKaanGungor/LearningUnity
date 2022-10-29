@@ -5,13 +5,18 @@ using UnityEngine;
 public class SmoothCam : MonoBehaviour
 {
     public Transform target;
+    public float smoothing;
+
     void Start()
     {
         
     }
 
-    void Update()
+    void LateUpdate()
     {
-        
+        if(transform.position != target.position)
+        {
+            transform.position = Vector3.Lerp(transform.position, target.position,smoothing );
+        }
     }
 }
