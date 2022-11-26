@@ -10,6 +10,7 @@ public class signReader : MonoBehaviour
     public bool signActivator;
     public string dialogTXT;
     public GameObject PointerOfAction;
+    public bool outliner;
 
     void Start()
     {
@@ -26,8 +27,23 @@ public class signReader : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             PointerOfAction.SetActive(true);
+            outliner = true;
+            if(Input.GetKeyDown("e"))
+            {
+                dialogBoxGO.SetActive(true);
+            }
         }
 
 
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            PointerOfAction.SetActive(false);
+            outliner = false;
+            dialogBoxGO.SetActive(false);
+        }
     }
 }

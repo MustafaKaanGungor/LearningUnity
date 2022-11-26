@@ -10405,9 +10405,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBoxGO: {fileID: 2135234491}
   dialogBoxTXT: {fileID: 1212881725}
-  signActivator: 0
+  signActivator: 1
   dialogTXT: Henlo!
   PointerOfAction: {fileID: 1795985017}
+  outliner: 0
 --- !u!61 &1129357980
 BoxCollider2D:
   m_ObjectHideFlags: 0
